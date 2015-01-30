@@ -32,7 +32,7 @@
 
 #conteudo{
     /*Novamente definimos a largura da div*/
-    width:1000px;
+    width:77%;
     /* altura da div */
     height:589px;
     /* Cor de fundo da div */
@@ -43,25 +43,29 @@
 	margin-right: -150px;
 }  
 #footer{
-    /*Novamente definimos a largura da div*/
-    width:100%;
+     /*Novamente definimos a largura da div*/
+    width:77%;
+    /*background-color:#0F0;*/
+	/*Alinha a esquerda*/
+	margin-left: 150px;
+	/*Alinha a direita*/
+	margin-right: -150px;
     /* altura da div */
     height:41px;
     /* Cor de fundo da div */
     background-color: #2a80b9;
 }
 #menu{
-/*Novamente definimos a largura da div*/
+	/*Novamente definimos a largura da div*/
     width:100%;
     /* altura da div */
     height:150px;
     /* Cor de fundo da div */
- 
 }
 
 #menuopc{
     /*Novamente definimos a largura da div*/
-    width:1000px;
+    width:77%;
     /* altura da div */
     height:150px;
     /* Cor de fundo da div */
@@ -75,19 +79,34 @@
 #menubot{
     /*Novamente definimos a largura da div*/
     width:1000px;
-    /* altura da div */
-    height:60px;
-    /* Cor de fundo da div */
-    /*background-color:#0F0;*/
-	/*Alinha a esquerda*/
-	margin-left: 150px;
-	/*Alinha a direita*/
-	margin-right: -150px;
+	display: block;	
 }
 
 #menuopco{
-	width:100%;
+	width:100%; 
+	display: block;	
 }
+
+#divesquerda{
+	/*top : posição de cima */
+    margin-top:15px;
+	display: block;	
+	float:left;
+    width:50%;
+}
+
+#divdireita{
+	/*top : posição de cima */
+    margin-top:15px;
+	display: block;	
+	float:right;
+    width:50%;
+}
+
+ul {
+list-style-type: none;
+}
+
 
 .menu{
 	list-style:none;
@@ -101,10 +120,10 @@
 	border-right:1px solid #c0c0c0;
 }
 	
-.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
+.menu li a{color:#2a80b9; text-decoration:none; padding:5px 10px; display:block;}
 
 .menu li a:hover{
-	background:#333;
+	background:#2a80b9;
 	color:#fff;
 	-moz-box-shadow:0 3px 10px 0 #CCC;
 	-webkit-box-shadow:0 3px 10px 0 #ccc;
@@ -158,5 +177,5 @@ h1#logo {
 h1 {
     font-family: "Varela",sans-serif;
 }
-}
+
 
