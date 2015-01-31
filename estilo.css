@@ -6,16 +6,16 @@
     /* Definimos a largura da página */
     width:100%;
     /* Definirmos a altura da página*/
-    height:70%;
+    /*height:70%;*/
     /* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
     /*top : posição de cima */
-    margin-top:0;
+    margin-top:0px;
     /* left: posição de esquerda*/
-    margin-left:auto;
+    /*margin-left:auto;*/
     /* bottom : posição de baixo */
     margin-bottom:0;
     /* right : posição de direita */
-    margin-right:auto;
+    /*margin-right:auto;*/
     /* Aqui definiremos a cor de fundo da página */
     /*background-color:#666;*/
 }
@@ -27,58 +27,71 @@
     height:27px;
     /* Cor de fundo da div */
     background-color: #2a80b9;
-
 }
 
 #conteudo{
     /*Novamente definimos a largura da div*/
-    width:77%;
+    width:982px;
     /* altura da div */
-    height:589px;
+    height:440px;
     /* Cor de fundo da div */
     /*background-color:#0F0;*/
 	/*Alinha a esquerda*/
-	margin-left: 150px;
+	/*margin-left: 150px;*/
 	/*Alinha a direita*/
-	margin-right: -150px;
+	/*margin-right: -150px;*/
+	margin:0 auto;
+	left:0px;
+	right:0px;
+	overflow:hidden;
+	clear: both;
+
 }  
 #footer{
-     /*Novamente definimos a largura da div*/
-    width:77%;
+    /*Novamente definimos a largura da div*/
+    width:982px;
     /*background-color:#0F0;*/
 	/*Alinha a esquerda*/
-	margin-left: 150px;
+	/*margin-left: 150px;*/
 	/*Alinha a direita*/
-	margin-right: -150px;
+	/*margin-right: -150px;*/
     /* altura da div */
     height:41px;
     /* Cor de fundo da div */
     background-color: #2a80b9;
+	margin:0 auto;
+	left:0px;
+	right:0px;
+	
 }
 #menu{
 	/*Novamente definimos a largura da div*/
     width:100%;
     /* altura da div */
-    height:150px;
+    /*height:150px;*/
     /* Cor de fundo da div */
+	top:25px;
+	left:0px;
+	right:0px;
 }
 
 #menuopc{
     /*Novamente definimos a largura da div*/
-    width:77%;
+    width:982px;
     /* altura da div */
     height:150px;
     /* Cor de fundo da div */
     /*background-color:#0F0;*/
 	/*Alinha a esquerda*/
-	margin-left: 150px;
+	/*margin-left: 150px;*/
 	/*Alinha a direita*/
-	margin-right: -150px;
+	/*margin-right: -150px;*/
+	margin:0 auto;
 }
 
 #menubot{
     /*Novamente definimos a largura da div*/
-    width:1000px;
+    width:100%;
 	display: block;	
 }
 
@@ -89,18 +102,16 @@
 
 #divesquerda{
 	/*top : posição de cima */
-    margin-top:15px;
-	display: block;	
 	float:left;
-    width:50%;
+	display: block;
+	width: 440px;
 }
 
 #divdireita{
 	/*top : posição de cima */
-    margin-top:15px;
-	display: block;	
 	float:right;
-    width:50%;
+	width: 440px;
+	display: block;
 }
 
 ul {
@@ -110,30 +121,27 @@ list-style-type: none;
 
 .menu{
 	list-style:none;
-	border:1px solid #c0c0c0;
 	float:left;
 }
 		
 .menu li{
 	position:relative;
 	float:left;
-	border-right:1px solid #c0c0c0;
 }
 	
-.menu li a{color:#2a80b9; text-decoration:none; padding:5px 10px; display:block;}
+.menu li a{color:#2a80b9; text-decoration:none; padding:8px 13px; display:block; font: 18px Arial, sans-serif;}
 
 .menu li a:hover{
 	background:#2a80b9;
 	color:#fff;
-	-moz-box-shadow:0 3px 10px 0 #CCC;
-	-webkit-box-shadow:0 3px 10px 0 #ccc;
-	text-shadow:0px 0px 5px #fff;
+	-moz-box-shadow:0 6px 13px 0 #CCC;
+	-webkit-box-shadow:0 6px 13px 0 #ccc;
+	text-shadow:0px 0px 13px #fff;
 }
 	
 .menu li:hover ul, .menu li.over ul{display:block;}
 		
 .menu li ul li{
-	border:1px solid #c0c0c0;
 	display:block;
 	width:150px;
 }
@@ -147,33 +155,31 @@ list-style-type: none;
 } 
 
 a{
-text-decoration: none;
-font: 12px 'OpenSans400', Tahoma, Arial, sans-serif;
+font: 12px Arial, sans-serif;
 color: #FFF;
-padding-right: 20px;
-transition: all .1s linear; -ms-transition: all .1s linear;
--moz-transition: all .1s linear;
--webkit-transition: all .1s linear;
+text-decoration: none;
 }
 
 #divlinks{
     /*Novamente definimos a largura da div*/
-    width:1000px;
+    width:982px;
     /* altura da div */
-    height:150px;
+    height:27px;
     /* Cor de fundo da div */
     /*background-color:#0F0;*/
 	/*Alinha a esquerda*/
-	margin-left: 150px;
+	/*margin-left: 150px;*/
 	/*Alinha a direita*/
-	margin-right: -150px;
+	/*margin-right: -150px;*/
+	margin:0 auto;
+	padding: 6px;
 }
-
 
 h1#logo {
     margin: 16px 0;
     width: 189px;
 }
+
 h1 {
     font-family: "Varela",sans-serif;
 }
