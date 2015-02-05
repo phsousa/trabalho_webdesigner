@@ -6,7 +6,30 @@
 	<link rel="stylesheet" type="text/css"  href="estilo.css" media="all"/>
 	<!--[if lte IE 8]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->    
+	<![endif]-->
+	<script>
+			function notifyMe() {
+			// Let's check if the browser supports notifications
+			  if (!("Notification" in window)) {
+				alert("This browser does not support desktop notification");
+			  }
+
+			  else if (Notification.permission === "granted") {
+				var notification = new Notification('Estácio Fic Informa:', {
+				icon: 'imagens/Logo_Estacio.jpg',
+				body : 'Matricula realizada com sucesso!'
+				});
+			  }
+
+			  else if (Notification.permission !== 'denied') {
+				Notification.requestPermission(function (permission) {
+				  if (permission === "granted") {
+					var notification = new Notification("Hi there!");
+				  }
+				});
+			  }
+}
+</script>
 	</head>
 	<body>
 		<div id="site">
@@ -69,25 +92,30 @@
 			
 			<hr>
 			
+			
 			<div id="conteudo">
+			
+				<video src="C:\Users\Paulo Henrique\Desktop\trabalho_webdesigner\media\mov_bbb.mp4" controls>
+					Seu navegador não suporta videos, progrida alguns anos e tente novamente!
+				</video>
+			
+				<br/>
+			
 				<div id="divesquerda">
-				<h5>
-					<p>Design Gráfico, é uma forma de se comunicar visualmente um conceito, uma ideia, </p>
-					<p>através de técnicas formais. Podemos ainda considerá-lo como um meio de estruturar</p> 
-					<p>e dar forma à comunicação impressa,1 em que, no geral, se trabalha o relacionamento </p>
-					<p>entre ‘imagem’ e texto.</p>
+					<h5>
+						<p>Design Gráfico, é uma forma de se comunicar visualmente um conceito, uma ideia. </p>		
 					</br>
 				</h5>
 				</div>
+				
 				<div id="divdireita">
-				<h5>
-					<p>Um designer gráfico é, convenientemente, um conhecedor e utilizador das mais variadas </p>
-					<p>técnicas e ferramentas de desenho, mas não só. O Designer Gráfico tem como principal </p>
-					<p>moeda de troca a habilidade para aliar a sua capacidade técnica à crítica e ao </p>
-					<p>repertório conceitual,sendo fornecedor de matéria-prima intelectual. </p>
-				</h5>
+					<h5>
+						<p>Um designer gráfico é, convenientemente, um conhecedor e utilizador das mais variadas. </p>
+					</h5>
 				</div>
+				<a href="#site" class="inscrevase" onclick="notifyMe()">Increva-se</a>		
 			</div>
+			
 			
 			<div id="footer">
 				<table  style="width:100%; padding: 10px;" >
