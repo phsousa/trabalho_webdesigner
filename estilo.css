@@ -193,7 +193,7 @@ width: 120px;
 
 video{
     /*Novamente definimos a largura da div*/
-    width:640px;
+    width:982px;
     /* altura da div */
     height:300px;
     /* Cor de fundo da div */
@@ -208,6 +208,15 @@ video{
 	overflow:hidden;
 	clear: both;
 }
+
+#linksMenu .navegacao {
+    color: #5c6d7d;
+    font: 12px "OpenSans600",Tahoma,Arial,sans-serif;
+ 	float:right;
+	width: 440px;
+	display: block;
+}
+
 
 
 /*  Redes sociais  */
